@@ -49,14 +49,6 @@
   max-width: 40%;
 }
 
-.featuredDescription span {
-  display: block;
-  text-overflow: ellipsis;
-  word-wrap: break-word;
-  overflow: hidden;
-  max-height: 5em;
-}
-
 .featuredButtons {
   margin-top: 15px;
 }
@@ -93,4 +85,33 @@
   margin-top: 15px;
   font-size: 18px;
   color: #999;
+}
+
+@media (max-width: 760px) {
+  .featured {
+    height: 90vh;
+  }
+  
+  .featuredName {
+    font-size: 40px;
+  }
+
+  .featuredInfo {
+    font-size: 16px;
+  }
+
+  .featuredDescription {
+    font-size: 14px;
+    max-width: 100%;
+    margin-right: 30px;
+  }
+
+  .featuredWatchButton,
+  .featuredMyListButton {
+    font-size: 16px;
+  }
+
+  .featuredGenres {
+    font-size: 14px;
+  }
 }

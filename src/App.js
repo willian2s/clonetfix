@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react';
 import MovieRow from './components/MovieRow';
 import FeaturedMovie from './components/FeaturedMovie';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 import tmdb from './services/tmdb';
 
-import './App.css'
+import './App.css';
 
 export default () => {
 
@@ -33,20 +34,20 @@ export default () => {
   }, []);
 
   useEffect(() => {
-      const scrollListener = () => {
-        if(window.scrollY > 10) {
-          setBlackHeader(true)
-        } else {
-          setBlackHeader(false)
-        }
+    const scrollListener = () => {
+      if(window.scrollY > 10) {
+        setBlackHeader(true);
+      } else {
+        setBlackHeader(false);
       }
+    };
 
-      window.addEventListener('scroll', scrollListener);
+    window.addEventListener('scroll', scrollListener);
 
-      return () => {
-        window.removeEventListener('scroll', scrollListener)
-      }
-    }, [])
+    return () => {
+      window.removeEventListener('scroll', scrollListener);
+    };
+  }, []);
 
   return (
     <div className="page">
@@ -65,6 +66,9 @@ export default () => {
           />
         ))}
       </section>
+      
+      <Footer />
+      
     </div>
-  )
-}
+  );
+};

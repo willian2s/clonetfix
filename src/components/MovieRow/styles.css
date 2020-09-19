@@ -12,7 +12,7 @@
 }
 
 .movieRowList {
-  width: 99999px;
+  transition: all ease 0.5s;
 }
 
 .movieRowItem {
@@ -30,3 +30,33 @@
 .movieRowItem img:hover {
   transform: scale(1);
 }
+
+.movieRowLeft,
+.movieRowRight {
+  position: absolute;
+  width: 40px;
+  height: 225px;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+
+.movieRowLeft {
+  left: 0;
+}
+
+.movieRowRight{
+  right: 0;
+}
+
+.movieRow:hover .movieRowLeft,
+.movieRow:hover .movieRowRight {
+  opacity: 1;
+}
+

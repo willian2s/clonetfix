@@ -49,6 +49,14 @@
   max-width: 40%;
 }
 
+.featuredDescription span {
+  display: block;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 5em;
+}
+
 .featuredButtons {
   margin-top: 15px;
 }

@@ -19,4 +19,4 @@ Este app foi construído com base no [Create React App](https://github.com/faceb
 
 4. Para iniciar o projeto basta digitar `yarn start` ou `npm start`.
 
-Pronto! 🤓
+Pronto!

@@ -68,6 +68,12 @@ export default () => {
       </section>
       
       <Footer />
+
+      {movieList.length <= 0 && 
+        <div className="loading">
+          <img src="https://www.filmmelier.com/pt/br/news/wp-content/uploads/2020/03/netflix-loading-471x256.gif" alt="Carregando"/>
+        </div>
+      }
       
     </div>
   );

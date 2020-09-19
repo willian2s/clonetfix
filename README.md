@@ -1,8 +1,10 @@
 # Clonetfix
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/30d9a923-8416-446f-8596-ed83ce0544f5/deploy-status)](https://app.netlify.com/sites/clonetflix/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fb6988f9-4144-40c1-9780-fd5685f6f588/deploy-status)](https://app.netlify.com/sites/clonetflix/deploys)
  
 Este app foi construído com base no [Create React App](https://github.com/facebook/create-react-app). Este app é a representação de um clone da homepage da NETFLIX. Todos os dados forão retirados da API do [The Movies DB](https://www.themoviedb.org/).
+
+Clique para acessar a [Demo](https://clonetflix.netlify.app/)
 
 ## Como rodar o projeto:
 
